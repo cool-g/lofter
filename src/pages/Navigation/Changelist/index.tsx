@@ -51,6 +51,7 @@ const ChangeList:React.FC<ChangeListProps> =(props) => {
     const tabElement = list.map(
         // 推荐tab不可自定义顺序
         item => item.id!==0?<ListItem {...item} key={item.id} />:null
+        // item => <ListItem {...item} key={item.id} />
     )
 
     return (
